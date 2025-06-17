@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prateek - Data Analyst Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio_css.css">
+    <script src="portfolio_js.js"></script>
+
+</head>
+
+<body>
+    <!-- Floating Shapes -->
+    <div class="floating-shapes">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+        <div class="floating-shape shape-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">Prateek</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Prateek</h1>
+            <p class="subtitle">Data Analyst & Problem Solver</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="experience-container">
+            <div class="experience-item animate-on-scroll">
+                <img src="Screenshot 2025-06-17 095339.png" alt="Shrestha IT Solutions" class="experience-logo">
+                <div class="experience-content">
+                    <h3>Data Science Intern</h3>
+                    <div class="company">Shrestha IT Solutions Private Limited</div>
+                    <div class="duration">Current Position</div>
+                    <p>Working on advanced data science projects, developing machine learning models, and contributing to business intelligence solutions.</p>
+                </div>
+            </div>
+            <div class="experience-item animate-on-scroll">
+                <img src="edunet.png" alt="Edunet Foundation" class="experience-logo">
+                <div class="experience-content">
+                    <h3>Project Intern</h3>
+                    <div class="company">Edunet Foundation</div>
+                    <div class="duration">Previous Role</div>
+                    <p>Completed comprehensive projects in data analysis and machine learning, gaining hands-on experience with real-world datasets and problem-solving approaches.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills-grid animate-on-scroll">
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Python & Data Science</span>
+                    <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="90"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Machine Learning</span>
+                    <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="85"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>Data Visualization</span>
+                    <span>88%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="88"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">
+                    <span>SQL & Databases</span>
+                    <span>82%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-skill="82"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card animate-on-scroll">
+                <div class="project-header">
+                    <h3>Desktop Assistant</h3>
+                    <p>AI-powered voice assistant for desktop automation</p>
+                </div>
+                <div class="project-body">
+                    <p>An intelligent desktop assistant that can perform various tasks through voice commands, integrating speech recognition and automation capabilities.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Speech Recognition</span>
+                        <span class="tech-tag">Automation</span>
+                        <span class="tech-tag">AI</span>
+                    </div>
+                    <a href="https://github.com/launchforgedev/assistant.git" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card animate-on-scroll">
+                <div class="project-header">
+                    <h3>LLM Book Recommendation System</h3>
+                    <p>Advanced recommendation engine using Large Language Models</p>
+                </div>
+                <div class="project-body">
+                    <p>A sophisticated book recommendation system leveraging the power of Large Language Models to provide personalized reading suggestions.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">LLM</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Recommendation Systems</span>
+                    </div>
+                    <a href="https://github.com/launchforgedev/Book_recommendation_system.git" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card animate-on-scroll">
+                <div class="project-header">
+                    <h3>Blinkit Data Analysis</h3>
+                    <p>Comprehensive analysis of e-commerce delivery data</p>
+                </div>
+                <div class="project-body">
+                    <p>In-depth analysis of Blinkit's delivery and sales data, providing insights into customer behavior, delivery patterns, and business optimization opportunities.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Data Visualization</span>
+                        <span class="tech-tag">Business Intelligence</span>
+                    </div>
+                    <a href="https://github.com/launchforgedev/Blinkit_Data_Analysis.git" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card animate-on-scroll">
+                <div class="project-header">
+                    <h3>Forest Fire Detection</h3>
+                    <p>Computer vision system for early fire detection</p>
+                </div>
+                <div class="project-body">
+                    <p>An advanced computer vision system designed to detect forest fires early using image processing and machine learning techniques for environmental protection.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                    <a href="https://github.com/launchforgedev/forest_fire_detection.git" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <h2>Achievements & Activities</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card animate-on-scroll">
+                <img src="ktta.png" alt="Table Tennis" class="achievement-logo">
+                <h3>Table Tennis Champion</h3>
+                <p class="place">District Level Player</p>
+                <p>Represented district in table tennis competitions, demonstrating dedication and competitive spirit in sports.</p>
+            </div>
+
+            <div class="achievement-card animate-on-scroll">
+                <img src="yfs.png" alt="Youth for Seva" class="achievement-logo">
+                <h3>Youth for Seva Volunteer</h3>
+                <p class="place">Community Service</p>
+                <p>Active volunteer contributing to social causes and community development initiatives.</p>
+            </div>
+
+            <div class="achievement-card animate-on-scroll">
+                <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3>Coding Contest Winner</h3>
+                <p class="place">3rd Place - SGBIT Belagavi</p>
+                <p>Secured third position in competitive programming contest, showcasing problem-solving abilities.</p>
+            </div>
+
+            <div class="achievement-card animate-on-scroll">
+                <div class="achievement-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3>Programming Champion</h3>
+                <p class="place">1st Place - AITM Belagavi</p>
+                <p>Won first place in coding competition, demonstrating excellence in algorithmic thinking.</p>
+            </div>
+
+            <div class="achievement-card animate-on-scroll">
+                <div class="achievement-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Tech Quiz Winner</h3>
+                <p class="place">1st Place - VSMIT Nippani</p>
+                <p>Topped the technical quiz competition, showcasing comprehensive knowledge in technology and programming.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LaunchForge Section -->
+    <section class="launchforge-section" id="launchforge">
+        <div class="launchforge-content">
+            <h1>LaunchForge Dev Side</h1>
+            <p class="coming-soon">🚀 Coming Soon</p>
+            <a href="#" class="cta-button" onclick="openModal()">Join the Waitlist</a>
+        </div>
+    </section>
+
+    <!-- Modal Overlay -->
+    <div id="overlay" onclick="closeModal()"></div>
+
+    <!-- Waitlist Modal -->
+    <div id="waitlistModal">
+        <div class="modal-content">
+            <h2>Join the Waitlist</h2>
+            <p>Be the first to know when LaunchForge Dev Side launches!</p>
+            <input type="email" id="emailInput" placeholder="Enter your email" required>
+            <div class="modal-buttons">
+                <button id="submitBtn" onclick="submitEmail()">Submit</button>
+                <button onclick="closeModal()" class="close-btn">Close</button>
+            </div>
+            <p id="statusMsg"></p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Let's Connect</h2>
+        <p>Interested in collaborating or have a project in mind? Let's discuss how we can work together!</p>
+        <div class="contact-links">
+            <a href="https://github.com/launchforgedev" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:prateekact17@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/prateek-patil-7b4660281/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
