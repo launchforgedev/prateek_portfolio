@@ -814,11 +814,19 @@ button {
     margin-right: auto;
 }
 
-.cursor {
-    display: inline-block;
-    animation: blink 0.8s infinite;
-    color: #ffdd57;
+#typewriter-text-wrapper {
+  display: inline-block;
+  white-space: nowrap;
 }
+
+.cursor {
+  display: inline-block;
+  width: 1ch;
+  margin-left: 2px; /* moves it slightly to the right */
+  animation: blink 0.8s infinite;
+  color: #ffdd57;
+}
+
 
 @keyframes blink {
     0%, 100% { opacity: 1; }
