@@ -287,7 +287,7 @@
     </section>
 
     <script src="script.js"></script>
-    <script>
+   <script>
   const phrases = [
     "Data Analyst",
     "Problem Solver",
@@ -296,41 +296,39 @@
   ];
 
   const el = document.getElementById("typewriter-text");
-  let i = 0;
-  let j = 0;
+  let phraseIndex = 0;
+  let charIndex = 0;
   let isDeleting = false;
-  let currentPhrase = "";
-  let isEnd = false;
 
-  function loop() {
-    isEnd = false;
-    el.innerHTML = currentPhrase;
+  function type() {
+    const currentPhrase = phrases[phraseIndex];
+    let displayText;
 
-    if (!isDeleting && j <= phrases[i].length) {
-      currentPhrase = phrases[i].slice(0, ++j);
+    if (isDeleting) {
+      displayText = currentPhrase.substring(0, charIndex--);
+    } else {
+      displayText = currentPhrase.substring(0, charIndex++);
     }
 
-    if (isDeleting && j >= 0) {
-      currentPhrase = phrases[i].slice(0, --j);
-    }
+    el.textContent = displayText;
 
-    if (j === phrases[i].length) {
-      isEnd = true;
+    let typingSpeed = isDeleting ? 50 : 100;
+
+    if (!isDeleting && charIndex === currentPhrase.length + 1) {
       isDeleting = true;
-    }
-
-    if (j === 0 && isDeleting) {
+      typingSpeed = 1000; // pause before deleting
+    } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
-      i++;
-      if (i === phrases.length) i = 0;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      typingSpeed = 300; // pause before typing next
     }
 
-    const speed = isEnd ? 1000 : isDeleting ? 50 : 100;
-    setTimeout(loop, speed);
+    setTimeout(type, typingSpeed);
   }
 
-  document.addEventListener("DOMContentLoaded", loop);
+  document.addEventListener("DOMContentLoaded", type);
 </script>
+
 
 </body>
 </html>
