@@ -800,3 +800,28 @@ button {
     opacity: 1;
     transform: translateY(0);
 }
+.typewriter-container {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink 0.8s infinite;
+    color: #ffdd57;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
