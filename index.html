@@ -40,7 +40,11 @@
         <div class="overlay"></div>
         <div class="hero-content">
             <h1>Prateek</h1>
-            <p class="subtitle">Data Analyst & Problem Solver</p>
+<div class="typewriter-container">
+            <span id="typewriter-text"></span>
+            <span class="cursor">|</span>
+</div>
+
             <a href="#projects" class="cta-button">View My Work</a>
         </div>
     </section>
@@ -283,5 +287,50 @@
     </section>
 
     <script src="script.js"></script>
+    <script>
+  const phrases = [
+    "Data Analyst",
+    "Problem Solver",
+    "The Table Tennis Champion",
+    "Athlete"
+  ];
+
+  const el = document.getElementById("typewriter-text");
+  let i = 0;
+  let j = 0;
+  let isDeleting = false;
+  let currentPhrase = "";
+  let isEnd = false;
+
+  function loop() {
+    isEnd = false;
+    el.innerHTML = currentPhrase;
+
+    if (!isDeleting && j <= phrases[i].length) {
+      currentPhrase = phrases[i].slice(0, ++j);
+    }
+
+    if (isDeleting && j >= 0) {
+      currentPhrase = phrases[i].slice(0, --j);
+    }
+
+    if (j === phrases[i].length) {
+      isEnd = true;
+      isDeleting = true;
+    }
+
+    if (j === 0 && isDeleting) {
+      isDeleting = false;
+      i++;
+      if (i === phrases.length) i = 0;
+    }
+
+    const speed = isEnd ? 1000 : isDeleting ? 50 : 100;
+    setTimeout(loop, speed);
+  }
+
+  document.addEventListener("DOMContentLoaded", loop);
+</script>
+
 </body>
 </html>
